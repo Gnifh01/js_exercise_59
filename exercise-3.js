@@ -34,5 +34,5 @@ function fetchPersonById(id) {
 }
 
 // core here
-const pippo = fetchPersonById(2);
-pippo.then((item) => JSON.parse(item)).then((person) => console.log(person))
+const promise = fetchPersonById(2);
+promise.then((item) => JSON.parse(item)).then((person) => console.log(person))
